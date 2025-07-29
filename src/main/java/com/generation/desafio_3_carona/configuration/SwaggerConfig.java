@@ -18,13 +18,13 @@ public class SwaggerConfig {
 	@Bean
 	OpenAPI springBlogPessoalOpenAPI() {
 		return new OpenAPI()
-				.info(new Info().title("Projeto Integrador - Desafio 3").description("Aplicativo de Caronas - Generation Brasil")
+				.info(new Info().title("Projeto Integrador - Desafio 3").description("Aplicativo de Caronas - Generation Brasil (Carlos Fork)")
 						.version("v0.0.1")
-						.license(new License().name("Generation Brasil").url("https://brazil.generation.org/"))
-						.contact(new Contact().name("Grupo 4").url("https://github.com/Turma-81-grupo-4/Aplicativo-Carona")
-								.email("java81grupo4@gmail.com")))
+						.license(new License().name("Carlos Henrique da Silva Barbosa").url("https://github.com/Henrykeeh"))
+						.contact(new Contact().name("Carlos Henrique da Silva Barbosa").url("https://www.linkedin.com/in/carlos-henrique-da-silva-barbosa-no-linked-in/")
+								.email("c.henrique.silvabarbosa@gmail.com")))
 				.externalDocs(new ExternalDocumentation().description("Github")
-						.url("https://github.com/conteudoGeneration/"));
+						.url("https://github.com/Henrykeeh"));
 	}
 
 	@Bean

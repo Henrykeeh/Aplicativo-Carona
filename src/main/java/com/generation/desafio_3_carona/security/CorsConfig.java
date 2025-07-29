@@ -15,7 +15,9 @@ public class CorsConfig implements WebMvcConfigurer {
                 "https://carona-nu.vercel.app",
                 "https://carona-grupo-4-java-81s-projects.vercel.app",
                 "https://carona-fork.vercel.app",
-                "https://carona-fork.onrender.com"
+                "https://carona-fork-carlos-henrique-da-silva-barbosas-projects.vercel.app",
+                "https://carona-fork.onrender.com",
+                "https://*.vercel.app"
             )
             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
             .allowedHeaders("*")
