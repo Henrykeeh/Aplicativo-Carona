@@ -86,7 +86,8 @@ public class BasicSecurityConfig {
             "http://localhost:5173",
             "https://carona-nu.vercel.app",
             "https://carona-grupo-4-java-81s-projects.vercel.app",
-            "https://carona-fork.vercel.app/"
+            "https://carona-fork.vercel.app",
+            "https://carona-fork.onrender.com"
         ));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
