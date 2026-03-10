@@ -1,6 +1,7 @@
 package com.generation.desafio_3_carona.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -16,6 +17,9 @@ import com.generation.desafio_3_carona.dto.CaronaDTO;
 
 @Service
 public class PagamentoService {
+	
+	@Value("${ABACATE_API_KEY}")
+    private String apiKey;
 	
 	private final CaronaRepository caronaRepository;
 	
@@ -50,12 +54,12 @@ public class PagamentoService {
 	    customer.setTaxId("11144477735");
 	    request.setCustomer(customer);
 
-	    request.setReturnUrl("https://carona-nu.vercel.app/caronas");
-	    request.setCompletionUrl("https://carona-nu.vercel.app/passagens");
+	    request.setReturnUrl("http://localhost:5173/caronas");
+	    request.setCompletionUrl("http://localhost:5173/passagens?success=true");
 
 	    HttpHeaders headers = new HttpHeaders();
 	    headers.setContentType(MediaType.APPLICATION_JSON);
-	    headers.setBearerAuth("abc_dev_QDnqCxaGB2Lm4hSA2YfqWJf4");
+	    headers.setBearerAuth(apiKey);
 
 	    HttpEntity<Pagamento> entity = new HttpEntity<>(request, headers);
 
