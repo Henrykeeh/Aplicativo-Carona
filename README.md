@@ -66,12 +66,13 @@ Permitir que os usuários se cadastrem como motoristas ou passageiros, criem ou 
 * [Camille Tarine](https://github.com/CahTarine)
 * [Carlos Henrique da Silva Barbosa](https://github.com/Henrykeeh)
 * [Henrique Machado](https://github.com/scottineo)
-
-**Product Owner:**
 * [Beatriz Kailane](https://github.com/BeaKaylanee)
 
+**Product Owner:**
+* [Carlos Henrique da Silva Barbosa](https://github.com/Henrykeeh)
+
 **Tester:**
-* [Rosana Ferreira](https://github.com/lelesrosana)
+* [Camille Tarine](https://github.com/CahTarine)
 
 
 ## 📄 Documentação
